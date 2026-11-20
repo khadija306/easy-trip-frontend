@@ -1,0 +1,207 @@
+ 
+#about_root{
+	background-color:white;
+}
+/*بداية تنسيق أول جزء */
+#firstAboutSection{
+   width: 100%;
+   height: 80vh;
+   background-image: url("./titleAbout.png");
+   background-position:center;
+   background-size: cover;
+   color: rgba(255, 255, 255,1);
+   text-align: center;
+   border-bottom-left-radius:20px;   
+   border-bottom-right-radius:20px;  
+}
+
+#join_us_word{
+font-size: 80px;
+}
+#text{
+    padding-top: 80px;
+}
+#text h1{
+     font-size: 120px;
+	 text-shadow:0px 0px 10px white;
+	 animation-duration:2s;
+	 animation-name:show_up_about;
+}
+#text p{
+    font-size: 40px;
+	 animation-duration:3s;
+	 animation-name:show_up_about;
+	 color:rgb(255, 255, 255, 0.7);
+}
+
+/*نهاية تنسيق أول جزء*/
+/* بداية تنسيق فقرة about*/
+#AboutUsSection{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    color:#111d2e;
+	 
+   
+}
+#welcomVisitor p{
+	line-height:30px;
+}
+.titleMS{
+    color: #111d2e;
+    font-size: 40px;
+    text-align: center;
+	 
+ 
+}
+#AboutUsSection{
+margin-top:80px;
+}
+.text_edit{
+
+font-size: 25px;
+    width: 60%;
+  
+    text-align: start;
+    margin: auto;
+    line-height: 40px;
+	}
+/*نهاية تنسيق فقرة about*/
+/*بداية تنسيق فقرة welcome*/
+#welcomVisitor{
+    background-color: #eaebec;
+    text-align: center;
+    padding: 10px 0;
+   border-radius:20px;
+    color: #111d2e;
+
+}
+#welcomVisitor i {
+	padding-top:20px;
+}
+#welcomVisitor p{
+    
+    font-size: 20px;
+}
+
+#home_link_from_about i{
+    text-decoration:none;
+	font-size:30px;
+	color:black;
+}
+
+#home_link_from_about i:hover{
+    color:#aaa	;
+}
+ 
+/*نهاية تنسيق فقرة welcome*/
+
+/*بداية تنسيق الcards*/
+.cards{
+    display: flex;
+    gap: 7%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+.cards div{
+	border-radius:50px;
+	margin-bottom:20px;
+}
+.card{
+    border: 1px solid  #98a6b4;
+    box-shadow: 5px 5px 5px 0  #c5d5e6;
+    text-align: center;
+    width: 35%; 
+    background-color: #eaebec; 
+    color: #111d2e;
+	cursor:pointer;
+}
+.card:hover{
+ transform: perspective(800px) translate3d(0, 0, 100px);
+ transition-duration: 0.3s;
+}
+
+.card i:first-child{
+    font-size: 30px;
+    margin-top: 2%;
+}
+
+/*نهاية تنسيق الcards*/
+/*بداية تنسيق الجزء الأخير*/
+#lastAboutSection{
+    width: 100%;
+   height: 80vh;
+   background-image: url("./lastAbout.jpg");
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   gap: 5%;
+   border-radius:20px;
+   
+}
+#NoteAboutSS{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 10;
+    line-height: 25px; 
+    margin-left: 10%;  
+     
+}
+.comment{
+    display: flex;
+    flex-wrap: wrap;
+    border:  solid rgba(255,255,255,0.2);
+    color: white;
+	 border-radius:20px;
+    font-size: large;
+    letter-spacing: 1px; 
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.2); 
+}
+ 
+.userComment{
+    font-size: 30px;
+    direction: ltr;
+    color:#111d2e;
+    padding-left: 10px;
+}
+#userName{
+    font-size: large;
+    color:#111d2e ;
+    padding-left: 5px;
+}
+#newHotel,#newDest,#newWhy{
+   
+    margin-left: 7%;
+    margin-right: 2%;
+    gap: 5%;
+    display:none;
+    margin-bottom: 2%;
+ 
+}
+.newText{
+    font-size: large;
+    font-weight: 100;
+    width: 45%;
+	
+}
+
+
+
+@keyframes show_up_about {
+    from {
+     opacity: 0;
+     transform: translateY(100px);
+    }
+    to{
+  opacity: 1;
+  transform: translateY(0px);
+    }
+} 
+ 

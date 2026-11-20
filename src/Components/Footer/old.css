@@ -1,0 +1,172 @@
+ 
+
+/* --------------------------------------------- */
+/* main footer style  , the footer is divided into 2 parts */
+
+ 
+#Footer_root_element {
+
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: fit-content;
+  align-items: center;
+  background-image: url('footer.png');
+  background-position: center;
+  background-repeat:no-repeat ;
+  background-size: cover;
+  font-size: 15px;
+ 
+}
+
+#first_part_of_footer {
+  width: 100%;
+  min-width: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+} 
+
+#second_part_of_footer {
+
+  font-weight: 100;
+  font-size: 30px;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 10px;
+  min-width: fit-content;
+  color: white;
+  text-shadow:0px 0px 3px white;
+  
+}
+
+/* --------------------------------------------- */
+/* general style for all sections in the first part of the footer: */
+#footer_section1,
+#footer_section2,
+#footer_section3,
+#footer_section4 
+ {
+
+  backdrop-filter: blur(15px);
+  margin-top: 10px;
+  padding: 20px;  
+  border-radius: 25px;
+  color: white;
+}
+
+/* --------------------------------------------- */
+/*  style the first section ' section 1 ' that has the name of website and some paragraph : */
+#footer_section1{
+
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  height: fit-content;
+  align-items: center;
+  color: white;
+  
+}
+#footer_site-photo{
+  background-image: url('./title.png');
+  background-position: center;
+  background-size: cover;
+  width: 70%;
+  height: 55px;
+  margin-top: 10px;
+  align-items: center;
+  background-color: #333;
+  border-radius: 20px;
+  z-index: 55;
+ 
+}
+
+#descFooterSection1 {
+  width: 50%;
+  margin-top: 10px;
+  color:  white;
+}
+
+/* --------------------------------------------- */
+/* links of section 2 styling :*/
+
+#home_link_footer,
+#about_link_footer {
+	display:block;
+	text-decoration:none;
+  margin-top: 20px;
+  width: fit-content;
+  border-bottom: white solid 1px;
+  cursor: pointer;
+  color: white;
+}
+
+#home_link_footer:hover,
+#about_link_footer:hover {
+  color: cadetblue;
+  border-bottom: cadetblue solid 1px;
+}
+
+/* --------------------------------------------- */
+/*  icons styling : for all sections : */
+
+#footer_section2 i {
+
+  padding-right: 10px;
+
+}
+
+#footer_section4 i {
+
+  font-size: 30px;
+  padding: 10px;
+}
+
+#footer_section4 i:hover {
+
+  color: rgb(136, 136, 136);
+
+}
+
+/* --------------------------------------------- */
+
+/* section 3 styling : */
+
+#footer_section3 a,
+#footer_section3 div {
+  padding-top: 20px;
+  cursor: default;
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+#footer_section3 i {
+  padding-right: 10px;
+  
+}
+
+#footer_section3 div:hover,
+#footer_section3 #footer_googleMail:hover {
+
+  color: blue;
+}
+/*-------- section 4  style for icons*/
+#footer_section4 .fa-facebook ,
+#footer_section4 .fa-linkedin{
+text-shadow:0px 0px 10px blue;
+}
+
+#footer_section4 .fa-instagram {
+text-shadow:0px 0px 10px #b6149c;
+}
+ #footer_section4 .fa-x-twitter{
+ text-shadow:0px 0px 10px black;
+ }

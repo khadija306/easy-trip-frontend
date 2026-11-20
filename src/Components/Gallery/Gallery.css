@@ -1,0 +1,347 @@
+:root {
+  --button_color: rgb(82, 139, 141);
+  --buttons_background_color: rgba(0, 0, 0, 0.05);
+
+  --filter_bar_color: linear-gradient(
+    50deg,
+    #8db1cb,
+    #a1baca,
+    #abd6ee,
+    #d6eaf0
+  );
+  --filter_bar_color2: rgba(109, 128, 197, 0.416);
+}
+/*the root of gallery app */
+#gallery_root {
+  width: 100%;
+  background-color: rgba(0, 0, 0);
+  height: fit-content;
+  margin: 0px;
+  background-size: cover;
+  overflow: hidden;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.53, 0.145, 0.25, 1);
+  background-image: url("./Background_images/beach_background.jpg");
+}
+
+/* the button section of gallery root (i.e. beach , nature , city ) :*/
+
+#gallery_button_section {
+  width: fit-content;
+  height: fit-content;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0px auto;
+
+  backdrop-filter: blur(50px);
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px black;
+}
+
+#gallery_button_section button {
+  padding: 20px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  margin: 5px 40px;
+}
+
+/* beach is selected as default */
+
+#gallery_nature_button,
+#gallery_city_button,
+#gallery_view_button,
+#gallery_beach_button {
+  background-color: transparent;
+}
+
+#gallery_nature_button:hover {
+  color: rgb(9, 188, 9);
+  text-shadow: 0px 0px 10px rgb(9, 188, 9);
+}
+
+#gallery_beach_button:hover {
+  color: rgb(28, 159, 188);
+  text-shadow: 0px 0px 10px rgb(28, 159, 188);
+}
+
+#gallery_city_button:hover {
+  color: rgb(119, 119, 119);
+  text-shadow: 0px 0px 10px rgb(119, 119, 119);
+}
+
+/* the filter bar section :*/
+
+.gallery_choose_sentence {
+  font-size: 50px;
+}
+
+#gallery_container_for_filter_button {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#gallery_add_filter_button {
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(26px);
+  color:white;
+  text-shadow:0px 0px 5px white;
+}
+
+#gallery_add_filter_button:hover {
+  background-color: rgb(82, 139, 141);
+}
+
+#gallery_filter_section {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  display: none;
+  text-shadow: 0px 0px 1px white;
+  animation-duration: 500ms;
+}
+@keyframes show_filter {
+  from {
+    transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    -webkit-transform: rotateX(-90deg);
+  }
+}
+@keyframes hide_filter {
+  to {
+    transform: rotateX(90deg);
+  }
+}
+/* place filter section*/
+
+#gallery_place_filter_section {
+  width: 100%;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 20px;
+  backdrop-filter: blur(15px);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+  opacity: 0.8;
+  box-shadow: 0px 0px 5px 1px black;
+}
+
+#gallery_place_filter_section:hover {
+  opacity: 1;
+}
+#gallery_place_filter_section span {
+  font-size: 20px;
+}
+
+#gallery_places_menu {
+  text-align: center;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  width: fit-content;
+  height: 30px;
+  backdrop-filter: blur(15px);
+  margin-left: 15px;
+}
+
+/*   price & rate bar filter */
+
+#gallery_price_filter_bar,
+#gallery_rate_filter_bar {
+  width: 100%;
+  display: flex;
+  opacity: 0.8;
+  box-shadow: 0px 0px 5px 1px black;
+  justify-content: space-evenly;
+  height: 50px;
+  min-height: fit-content;
+  backdrop-filter: blur(15px);
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+#gallery_price_filter_bar:hover,
+#gallery_rate_filter_bar:hover {
+  opacity: 1;
+}
+
+#gallery_price_filter_bar span,
+#gallery_rate_filter_bar span {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#gallery_price_filter_bar span:hover,
+#gallery_rate_filter_bar span:hover {
+  background-color: rgba(82, 139, 141, 0.27);
+}
+
+#gallery_price_filter_bar span i,
+#gallery_rate_filter_bar span i {
+  display: none;
+}
+
+#gallery_price_filter_bar #gallery_any_price i,
+#gallery_rate_filter_bar #gallery_any_rate i {
+  display: initial;
+}
+
+/* the price/rate word and icon */
+
+.gallery_filter_word_and_icon {
+  font-size: 20px;
+}
+
+/* ---------------  sort bar style : */
+
+#gallery_sort_bar {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  box-shadow: 0px 0px 5px 1px black;
+}
+#gallery_sort_word {
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#gallery_sort_bar:hover {
+  opacity: 1;
+}
+#gallery_sort_bar span {
+  padding: 20px;
+  width: fit-content;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+#gallery_alphabetical i,
+#gallery_sort_price i,
+#gallery_sort_rate i {
+  display: none;
+}
+
+#gallery_asc_desc_order {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  padding: 5px 30px;
+  border-radius: 15px;
+}
+#gallery_asc_desc_order:hover {
+  background-color: rgb(149, 148, 148);
+}
+#gallery_sort_rate:hover,
+#gallery_sort_price:hover,
+#gallery_none:hover,
+#gallery_alphabetical:hover {
+  background-color: rgba(90, 90, 90, 0.504);
+}
+#gallery_sort_flex_none {
+  cursor: initial !important;
+}
+
+/*   here images will be shown  */
+
+#gallery_box {
+  width: 100%;
+
+  height: fit-content;
+
+  display: flex;
+  transform-style: preserve-3d;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 50px;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+/* to show images in beach mode */
+@keyframes rotate {
+  from {
+    transform: scale3d(0, 0, -1);
+    -webkit-transform: scale3d(0, 0, -1);
+    -moz-transform: scale3d(0, 0, -1);
+    -ms-transform: scale3d(0, 0, -1);
+    -o-transform: scale3d(0, 0, -1);
+  }
+}
+/* to show images in nature mode */
+@keyframes rotate2 {
+  from {
+    transform: scale3d(0, 0, -1);
+    -webkit-transform: scale3d(0, 0, -1);
+    -moz-transform: scale3d(0, 0, -1);
+    -ms-transform: scale3d(0, 0, -1);
+    -o-transform: scale3d(0, 0, -1);
+  }
+}
+/* to show images in city mode */
+@keyframes rotate3 {
+  from {
+    transform: scale3d(0, 0, -1);
+    -webkit-transform: scale3d(0, 0, -1);
+    -moz-transform: scale3d(0, 0, -1);
+    -ms-transform: scale3d(0, 0, -1);
+    -o-transform: scale3d(0, 0, -1);
+  }
+}
+/* to change the background of root gallery to city image */
+@keyframes city {
+  0% {
+  }
+  100% {
+    background-image: url("./Background_images/city_background.jpg");
+  }
+}
+/* to change the background of root gallery to beach image */
+@keyframes beach {
+  from {
+  }
+  to {
+    background-image: url("./Background_images/beach_background.jpg");
+  }
+}
+/* to change the background of root gallery to nature image */
+@keyframes nature {
+  from {
+  }
+  to {
+    background-image: url("./Background_images/nature_background.jpg");
+  }
+}

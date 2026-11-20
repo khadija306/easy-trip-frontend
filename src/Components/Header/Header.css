@@ -1,0 +1,68 @@
+.Header_Header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+	z-index:50;
+  
+}
+
+.Header_Home-About,
+.Header_Login-Register {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width : fit-content;
+    /* width: 150px; */
+    font-weight: bold;
+}
+.Home-About{
+    margin-left: 20px;
+}
+.Header_Login-Register{
+    margin-right: 20px;
+}
+
+.Header_site-image{
+    background-image: url('./title.png');
+    width: 100px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    background-color: #111d2e;
+    border-radius: 25px;
+    margin-right: 20px;
+}
+.Header_Button-Home,
+.Header_Button-About,
+.Header_Button-Register,
+.Header_Button-Login,
+.Header_Button-Logout {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px;
+    color: #365486;
+    border-bottom: transparent 2px solid;
+    transition-duration: 800ms;
+    
+}
+.Header_Button-About:focus,
+.Header_Button-Home:focus,
+.Header_Button-Login:focus,
+.Header_Button-Register:focus,
+.Header_Button-Logout:focus{
+    border-bottom: 2px solid #111d2e;
+}
+
+.Header_Button-Home:hover,
+.Header_Button-About:hover,
+.Header_Button-Register:hover,
+.Header_Button-Login:hover,
+.Header_Button-Logout:hover{
+background-color: rgb(173, 173, 173);
+border-radius: 20px;
+text-shadow:0px 0px 10px #444;
+
+}
