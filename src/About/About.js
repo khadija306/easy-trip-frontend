@@ -63,10 +63,10 @@ const  newdestClick =() => {
       </div>
       <div id="welcomVisitor">
         <h2 className="titleMS" >Welcome Our Visitor</h2>
-        <p>Complete your hotel booking and resturant chosing and tick off your dreams destinations from your bukcet list
+        <p>Complete your hotel booking and restaurant choosing and tick off your dreams destinations from your bucket list
            <br></br> and like we always say "<span style={{fontStyle: 'italic'  ,}}>To Travel Is To Live</span>" so Travel with "WHERE TO GO?"
         </p>
-        <p >For eruditeness the services we offer<br></br>Go to the Home bage</p>
+        <p >To explore all the services we offer<br></br>Go to the Home page</p>
         <Link to={"/"} id="home_link_from_about" title="Home page" onClick={()=>edit_style("Header_Button-Home") } >
           <i className='fa-solid fa-house'  	 ></i>
         </Link>
@@ -84,7 +84,7 @@ const  newdestClick =() => {
           <div id="destination" className="card" onClick={destClick}>
             <i class="fa fa-arrows"   ></i>
             <h3> Choose Destination</h3>
-            <p>Click to see our services about help you chooce your desination aroun the World</p>
+            <p>Click to see our services about help you chooce your desination around the World</p>
              
           </div>
           <div id="Why" className="card" onClick={whyClick}>
@@ -110,9 +110,9 @@ const  newdestClick =() => {
         <div id="newDest">
           <div className="newText">
            <h3>Choose Destination</h3>
-           At WHERE TO GO we help you choose yor destination ,We Exposes the most wonderful plasec aroun World,
-           If wou want to visits a Historical Sites,Enjoy the Picturesqe Nature,go to beach 
-           and enjoy whith sea and its waves and staying in comfortable chalets,Experience an advanture
+           At WHERE TO GO we help you choose your destination ,We Exposes the most wonderful places around World,
+           If wou want to visits a Historical Sites,Enjoy the Picturesque Nature,go to beach 
+           and enjoy with sea and its waves and staying in comfortable chalets,Experience an advanture
            on the slopes of the mountains .
          </div>
          <img src={require('./dest1.jpg')} width="20%" alt="  "></img>
@@ -141,7 +141,7 @@ const  newdestClick =() => {
         <div class="comment">
       <p style={{padding:'0 20px'}}>
           <span class="userComment"><i class="fa fa-user-circle" aria-hidden="true" ></i><br></br>
-          <span id="userName">Joen Rafi</span></span>
+          <span id="userName">John Rafi</span></span>
           <br></br>
           <i class="fa fa-quote-left" aria-hidden="true"></i><span>  </span>
           is a nice trip with your website we have stayed in a comfortable hotel with distinctive<span>  </span>
@@ -154,7 +154,7 @@ const  newdestClick =() => {
           <span id="userName">Ahmed Refai</span></span>
           <br></br>
           <i class="fa fa-quote-left" aria-hidden="true"></i><span>  </span>
-          I Like Your Website ,help me choose the most suitble hotel and resturant with delicious food <span>  </span>
+          I Like Your Website ,help me choose the most suitable hotel and restaurant with delicious food <span>  </span>
           <i class="fa fa-quote-right" aria-hidden="true"></i>
           </p>
         </div>
